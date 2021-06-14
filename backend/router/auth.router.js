@@ -7,7 +7,7 @@ const authRouter = new Router();
 
 authRouter.post('/login', verifyParams, verifyUser, login);
 
-authRouter.get('/', verifyAuthToken, async(ctx, next) => {
+authRouter.get('/test', verifyAuthToken, async(ctx, next) => {
   ctx.body = {
     msg: "校验成功，你登陆过",
     userInfo: ctx.userInfo
