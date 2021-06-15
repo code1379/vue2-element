@@ -1,0 +1,24 @@
+<template>
+  <el-container class="home">
+    <el-aside> aside </el-aside>
+    <el-container>
+      <el-header>
+        <!-- 面包屑 -->
+        <!-- 退出 -->
+      </el-header>
+      <el-main>main</el-main>
+    </el-container>
+  </el-container>
+</template>
+
+<script>
+export default {
+  name: "Home",
+};
+</script>
+
+<style  scoped>
+.home {
+  height: 100vh;
+}
+</style>

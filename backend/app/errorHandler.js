@@ -11,7 +11,11 @@ const errorHandler = (error, ctx) => {
     case errorType.USERNAME_IS_ALREADY_EXISTS:
       status = 409; // 冲突
       message = '用户名已存在';
-      break
+      break;
+    case errorType.PASSWORD_MISTAKE:
+      status = 400;
+      message = '密码错误';
+      break;
     default:
       status = 404; // 未知错误
       message = error.message;

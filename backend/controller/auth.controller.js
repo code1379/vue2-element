@@ -18,7 +18,7 @@ class AuthController {
     }
 
     console.log(token);
-    ctx.body = { token };
+    ctx.body = { token, id, username };
   }
 }
 
