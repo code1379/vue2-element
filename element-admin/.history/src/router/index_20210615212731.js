@@ -34,11 +34,9 @@ const routes = [
       // 信息管理/列表展示
       {
         path: '/wms',
-        name: 'Wms',
-        component: () => import('../views/home/wms/wms.vue'),
         children: [
           {
-            path: '/wms/list',
+            path: '/list',
             name: 'WmsList',
             component: () => import('../views/home/wms/list.vue')
           }

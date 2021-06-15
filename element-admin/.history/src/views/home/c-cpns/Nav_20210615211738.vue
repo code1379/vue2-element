@@ -1,6 +1,11 @@
 <template>
-  <el-menu default-active="2" class="el-menu-vertical-demo" router>
-    <NavItem v-for="item in items" :key="item.name" :item="item" />
+  <el-menu default-active="2" class="el-menu-vertical-demo">
+    <NavItem
+      v-for="(item, index) in items"
+      :key="item.name"
+      :index="String(index)"
+      :item="item"
+    />
   </el-menu>
 </template>
 

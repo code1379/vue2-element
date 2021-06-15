@@ -7,7 +7,7 @@
       </template>
       <NavItem v-for="c in item.child" :index="c.url" :item="c" :key="c.name" />
     </el-submenu>
-    <el-menu-item v-else :index="item.url">
+    <el-menu-item v-else :index="index">
       <div>{{ item.name }}</div>
     </el-menu-item>
   </div>

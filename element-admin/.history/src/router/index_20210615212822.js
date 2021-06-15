@@ -38,7 +38,7 @@ const routes = [
         component: () => import('../views/home/wms/wms.vue'),
         children: [
           {
-            path: '/wms/list',
+            path: '/list',
             name: 'WmsList',
             component: () => import('../views/home/wms/list.vue')
           }

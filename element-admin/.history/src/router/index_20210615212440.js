@@ -33,23 +33,10 @@ const routes = [
       },
       // 信息管理/列表展示
       {
-        path: '/wms',
-        name: 'Wms',
-        component: () => import('../views/home/wms/wms.vue'),
-        children: [
-          {
-            path: '/wms/list',
-            name: 'WmsList',
-            component: () => import('../views/home/wms/list.vue')
-          }
-        ]
+        path: '/wms/list',
+        name: 'WmsList',
+        component: () => import('../views/home/wms/list.vue')
       },
-      // ❌ 错误写法
-      // {
-      //   path: '/wms/list',
-      //   name: 'WmsList',
-      //   component: () => import('../views/home/wms/list.vue')
-      // },
       // 用户管理/用户统计
       {
         path: '/user/stats',

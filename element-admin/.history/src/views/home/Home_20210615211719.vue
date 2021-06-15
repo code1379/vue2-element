@@ -15,7 +15,7 @@
       </el-header>
       <!-- 主题展示区域，路由不同，展示不同 -->
       <el-main>
-        <router-view></router-view>
+        <router-view>main</router-view>
       </el-main>
     </el-container>
   </el-container>
